@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun Mamah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Tombol Awal -->
+  <div class="start-container">
+    <button class="start-button" onclick="startCelebration()">🎉 Klik untuk Mulai 🎉</button>
+  </div>
+
+  <!-- Konten Utama -->
+  <div id="main-content" class="hidden">
+    <header>
+      <h1>Selamat Ulang Tahun Mamah ❤️</h1>
+    </header>
+
+    <div class="typed-text" id="typed"></div>
+
+    <div class="gallery">
+      <img src="foto1.jpeg" alt="Foto 1">
+    </div>
+
+    <!-- Bagian Pesan & Kesan -->
+    <section class="message-section" id="message">
+      <div class="message-card">
+        <h2>Pesan & Kesan</h2>
+        <p>
+          Mamah, terima kasih atas segalanya. Maaf atas segala kekurangan dan kesalahanku selama ini.
+          Semoga mamah selalu sehat, bahagia, dan diberi umur panjang. Aku sayang mamah 💙
+        </p>
+      </div>
+    </section>
+
+    <!-- Audio -->
+    <div class="music-player">
+      <p>Lagu: Jamrud - Selamat Ulang Tahun 🎵</p>
+      <audio id="bg-music" autoplay loop>
+        <source src="hbd.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+      </audio>
+    </div>
+
+    <!-- Konfeti -->
+    <canvas class="confetti" id="confetti-canvas"></canvas>
+
+    <!-- Footer -->
+    <footer>
+      Dibuat dengan cinta oleh Anakmu 💖
+    </footer>
+  </div>
+
+  <!-- Script eksternal -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
